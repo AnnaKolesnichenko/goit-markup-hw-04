@@ -5,6 +5,7 @@
     --secondary-accent-color: #e7e9fc;
     --main-bg-color: #ffffff;
     --secondary-bg-color: #f4f4fd;
+    --additional-bg-color: #e5e5e5;
     --btn-accent-color: #404bbf;
 }
 
@@ -29,13 +30,18 @@ body {
 }
 /*--------HERO--------*/
 
-/*overlay max-width, height, margin r l auto, outline 1px solid black bgimage
-bgsize cover bgrepeat norepeat bg position center*/
-/*li::before
-display block height content:'', bg img bgsize containm 
-bgrepeat norepeat bgposition center bgcolor*/
 .hero {
     background-color: var(--main-text-color);
+    max-width: 1600px;
+    height: 603px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: linear-gradient(to right, rgba(46, 47, 66, .7),
+         rgba(46, 47, 66, .7)),
+        url('../images/people-office.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     text-align: center;
     padding-top: 192px;
     padding-bottom: 192px;
@@ -84,6 +90,22 @@ bgrepeat norepeat bgposition center bgcolor*/
     margin-left: 24px;
 }
 
+.thumb {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 264px;
+    height: 112px;
+    border-radius: 4px;
+    margin-bottom: 8px;
+    background-color: #f4f4fd;
+}
+
+.thumb-icon {
+    width: 64px;
+    height: 64px;
+}
+
 .strategy-title {
     margin-top: 0;
     color: var(--main-text-color);
@@ -102,7 +124,7 @@ bgrepeat norepeat bgposition center bgcolor*/
 }
 
 
-/*--------Devices--------*/
+/*--------DEVICES--------*/
 
 .devs-title {
     color: var(--main-text-color);
@@ -127,7 +149,7 @@ bgrepeat norepeat bgposition center bgcolor*/
     margin-left: 24px;
 }
 
-/*--------Team--------*/
+/*--------TEAM--------*/
 
 .team {
     background-color: var(--secondary-bg-color);
@@ -181,7 +203,7 @@ bgrepeat norepeat bgposition center bgcolor*/
 }
 
 .member-descr {
-    margin-bottom: 0;
+    margin-bottom: 8px;
     margin-top: 0;
     color: var(--secondary-text-color);
     font-size: 16px;
@@ -189,9 +211,74 @@ bgrepeat norepeat bgposition center bgcolor*/
     line-height: 1.5;
 }
 
+/*---social media---*/
+
+.member-media {
+    display: flex;
+    justify-content: space-around;
+}
+
+.member-media-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: var(--main-accent-color);
+    border-radius: 50%;
+}
+
+.social-item {
+    width: 16px;
+    height: 16px;
+}
+
 .member-title, 
 .member-descr {
     text-align: center;
+}
+
+/*--------CUSTOMERS---------*/
+
+.customers {
+    padding-top: 130px;
+    padding-bottom: 120px;
+}
+
+.customers-title {
+    margin-top: 0;
+    margin-bottom: 72px;
+    color: var(--main-text-color);
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.1;
+    text-align: center;
+}
+
+.companies {
+    display: flex;
+    justify-content: center;
+}
+
+.company {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 168px;
+    height: 88px;
+    border: 1px solid #8e8f99;
+    border-radius: 4px;
+    background-color: #ffffff;
+}
+
+.company-icon {
+    width: 104px;
+    height: 56px;
+    margin: 0;
+}
+
+.company:not(:last-child) {
+    margin-right: 24px;
 }
 
 

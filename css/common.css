@@ -129,6 +129,55 @@ nav {
     line-height: 1.5;
 }
 
+.footer-nav {
+    display: flex;
+}
+
+.social-media {
+    display: flex;
+    margin-left: auto;
+}
+
+.media {
+    display: flex;
+}
+
+.media-title {
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.media-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: rgba(255,255,255, .1);
+}
+
+.media-logo {
+    width: 24px;
+    height: 24px;
+}
+
+/*.pic {
+    display: block;
+    height: 50px;
+    width: 50px;
+    background-image: url('../images/daniel.jpg');
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: aqua;
+    border-radius: 50%;
+}*/
+
 .site-nav a:hover,
 .site-nav a:focus{
     color: var(--main-accent-color);
