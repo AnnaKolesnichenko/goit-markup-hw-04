@@ -285,20 +285,17 @@ body {
 .company-icon {
     width: 104px;
     height: 56px;
-    margin: 0;
-    color: #8e8f99;
+    fill: #8e8f99;
 }
 
-.company-link:hover,
-.company-link:active {
-    border: 1px solid #4d5ae5;
+.company-link:hover{
+    border-color: #4d5ae5;
+    border-radius: 4px;
 }
 
-.company-icon:hover,
-.company-icon:active{
+.company-link:hover .company-icon{
     fill: #4d5ae5;
 }
-
 
 
 .hero-btn:hover,
