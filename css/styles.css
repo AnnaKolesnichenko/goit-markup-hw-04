@@ -19,6 +19,7 @@ body {
 }
 
 
+
 /*------Filter Btns--------*/
 .filters {
     display: flex;
@@ -107,6 +108,7 @@ body {
 .filters-btn:hover,
 .filters-btn:focus {
     background-color: var(--main-accent-color);
+    border-color: var(--main-accent-color);
     color: var(--main-bg-color);
     box-shadow: 0px 3px 1px rgba(0,0,0,.1), 
     0px 2px 1px rgba(0,0,0, .08),

@@ -32,8 +32,8 @@ body {
 
 .hero {
     background-color: var(--main-text-color);
-    max-width: 1600px;
-    height: 603px;
+    max-width: 1440px;
+    height: 600px;
     margin-left: auto;
     margin-right: auto;
     background-image: linear-gradient(to right, rgba(46, 47, 66, .7),
@@ -86,6 +86,10 @@ body {
     display: flex;
 }
 
+.strategy {
+    width: calc((100% - 74px) / 4);
+}
+
 .strategies .strategy + .strategy {
     margin-left: 24px;
 }
@@ -94,7 +98,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 264px;
     height: 112px;
     border-radius: 4px;
     margin-bottom: 8px;
@@ -261,13 +264,18 @@ body {
     justify-content: center;
 }
 
+.company {
+    width: calc((100% - 120px) / 6);
+}
+
+.company:not(:last-child) {
+    margin-right: 24px;
+}
+
 .company-link {
-    display: block;
-    padding-left: 32px;
-    padding-right: 32px;
-    padding-top: 16px;
-    padding-bottom: 16px;
-    width: 168px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 88px;
     border: 1px solid #8e8f99;
     border-radius: 4px;
@@ -278,17 +286,30 @@ body {
     width: 104px;
     height: 56px;
     margin: 0;
+    color: #8e8f99;
 }
 
-.company:not(:last-child) {
-    margin-right: 24px;
+.company-link:hover,
+.company-link:active {
+    border: 1px solid #4d5ae5;
 }
+
+.company-icon:hover,
+.company-icon:active{
+    fill: #4d5ae5;
+}
+
 
 
 .hero-btn:hover,
 .hero-btn:focus {
     background-color: var(--btn-accent-color);
     box-shadow: 0px 4px 4px rgba(0,0,0, .15);
+}
+
+.media-link:hover,
+.media-link:active {
+    background-color: var(--btn-accent-color);
 }
 
 /*
